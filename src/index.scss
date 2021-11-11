@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+@import '../src//sass/variables.scss';
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+
+
+.navbar-light .navbar-brand {
+  // operator in scss
+  font-size: 20px + 10px;
+  color: $main-color !important;
+}
+
+.navbar .active {
+  font-weight: bold;
+  border-bottom: 1px solid $main-color;
+  color: $main-color !important;
+}
+
+.brand-name {
+  color: $main-color;
+}
+
+// nesting in scss
+.get-Started {
+  .btn {
+    border-radius: 30px;
+  }
+  .btn-primary {
+    background-color: #fff;
+    border-color: $main-color;
+    color: $main-color;
+    transition: 0.5s;
+  }
+  .btn-primary:hover {
+    background-color: $main-color;
+    border-color: $main-color;
+  }
+}
+
+.desc_style {
+  font-size: 20px;
+}
+
+.animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.card-img-top {
+  height: 200px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  padding: 5px;
+}
